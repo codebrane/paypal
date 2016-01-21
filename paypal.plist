@@ -28,6 +28,9 @@
 		<key>PayPalSignature</key>
 		<string>get this from https://developer.paypal.com/</string>
 		
+		<key>PayPalCurrency</key>
+		<string>GBP</string>
+				
 		<!-- Prints -->
 		
     <key>Nikon</key>
