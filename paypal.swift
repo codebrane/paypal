@@ -7,6 +7,7 @@ struct PayPal {
 	var user = "";
 	var password = "";
 	var signature = "";
+	var currency = "";
 }
 
 struct PrintSizeAndPrice {
@@ -48,7 +49,7 @@ func createAddToCartButton(paypal:PayPal, printSizesAndPrices:[PrintSizeAndPrice
 		httpBody += "BUTTONTYPE=CART" + "&"
 		
 		httpBody += "L_BUTTONVAR1=item_name=\(imageTitle)" + "&"
-		httpBody += "L_BUTTONVAR2=currency_code=GBP" + "&"
+		httpBody += "L_BUTTONVAR2=currency_code=\(paypal.currency)" + "&"
 		httpBody += "L_BUTTONVAR3=no_note=1" + "&"
 		httpBody += "OPTION0NAME=Print Size" + "&"
 		
@@ -155,6 +156,7 @@ paypal.apiURL = config["PayPalAPIURL"] as! String
 paypal.user = config["PayPalUser"] as! String
 paypal.password = config["PayPalPassword"] as! String
 paypal.signature = config["PayPalSignature"] as! String
+paypal.currency = config["PayPalCurrency"] as! String
 
 var printSizesAndPrices = [PrintSizeAndPrice]()
 let sizesAndPrices = config[imageType] as! [String]
