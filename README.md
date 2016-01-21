@@ -11,15 +11,17 @@ TYPE refers to a predefined pricing type in paypal.plist
 If you have a great photograph you took with your Nikon DSLR, your native resolution is around 18x12in. Scaling up to 30x20in for a truly superb print and scaling down to 15x10 for a more manageable product means you would have these defined in paypal.plist:
 
 ```xml
-  <key>Nikon</key>
-  <array>
-  	<string>30x20in:150</string>
-		<string>18x12in:100</string>
-		<string>15x10in:50</string>
-  </array>
+<key>Nikon</key>
+<array>
+	<string>30x20in:150</string>
+	<string>18x12in:100</string>
+	<string>15x10in:50</string>
+</array>
 ```
 
-and you can sell it online by using:
+Each entry in the Nikon array refers to the size and price. e.g. the 30x20in print sells for 150 units. The units are determined by the PayPalCurrency entry in paypal.plist.
+
+You can sell the above image online by using:
 
 <pre>
 	swift paypal.swift N3.jpg "Mountain Mists" Nikon
