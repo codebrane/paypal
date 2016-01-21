@@ -10,14 +10,14 @@ TYPE refers to a predefined pricing type in paypal.plist
 
 If you have a great photograph you took with your Nikon DSLR, your native resolution is around 18x12in. Scaling up to 30x20in for a truly superb print and scaling down to 15x10 for a more manageable product means you would have these defined in paypal.plist:
 
-<pre>
+```xml
   <key>Nikon</key>
   <array>
   	<string>30x20in:150</string>
 		<string>18x12in:100</string>
 		<string>15x10in:50</string>
   </array>
-</pre>
+```
 
 and you can sell it online by using:
 
