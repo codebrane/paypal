@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+
+<plist version="1.0">
+
+<dict>
+
+		<!-- ImageMagick -->
+
+    <key>ImageMagickConvert</key>
+    <string>/Users/alistair/apps/ImageMagick/bin/convert</string>
+		
+		<!-- PayPal -->
+		
+		<key>PayPalVersion</key>
+		<string>51.0</string>
+		
+		<key>PayPalAPIURL</key>
+		<string>https://api-3t.sandbox.paypal.com/nvp</string>
+		
+		<key>PayPalUser</key>
+		<string>get this from https://developer.paypal.com/</string>
+		
+		<key>PayPalPassword</key>
+		<string>get this from https://developer.paypal.com/</string>
+		
+		<key>PayPalSignature</key>
+		<string>get this from https://developer.paypal.com/</string>
+		
+		<!-- Prints -->
+		
+    <key>Nikon</key>
+    <array>
+    	<string>30x20in:150</string>
+			<string>18x12in:100</string>
+			<string>15x10in:50</string>
+    </array>
+		
+    <key>NikonPanorama</key>
+    <array>
+    	<string>30x12in:120</string>
+    </array>
+				
+</dict>
+
+</plist>
